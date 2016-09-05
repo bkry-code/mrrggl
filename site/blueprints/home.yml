@@ -1,0 +1,16 @@
+title: Home
+pages: false
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  recommended:
+    label: Recommended Activities
+    type: textarea
+    placeholder: '- (link: /notes text: Browse writing and notes)'
+  mailchimplist:
+    label: Mail Chimp List
+    type: mailchimpselect

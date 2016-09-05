@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* ------------------- */
+/* Base                */
+/* ------------------- */
+
+@import "base/_mixins.scss";
+@import "base/_colors.scss";
+@import "base/_sanitize.scss";
+@import "base/_fonts.scss";
+@import "base/_grid.scss";
+
+/* ------------------- */
+/* Partials            */
+/* ------------------- */
+
+@import "partials/_nav.scss";
+@import "partials/_search.scss";
+
+
+
+body {
+	background-color: $color-background;
+}
+
+* {
+    font-size: 100%;
+    color: #1e1e1e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.lead {
+	@include border-box;
+	padding: 0 .75rem;
+}
+
+@media screen and (min-width: 480px) {
+
+	.lead {
+		padding: 0 8%;
+	}
+
+}
+
+.lead h1 {
+	font-size: 1.625rem;
+	line-height: 2rem;
+	font-family: Malabar;
+	font-weight: 900;
+	a {
+		border-bottom: 1px solid #1e1e1e;
+	}
+}
+
+@media screen and (min-width: 748px) {
+
+	.lead h1 {
+		font-size: 2rem;
+		line-height: 2.625rem;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.lead h1 {
+		font-size: 2.625rem;
+		line-height: 3.375rem;
+	}
+
+}

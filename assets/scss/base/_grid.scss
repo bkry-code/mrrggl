@@ -1,0 +1,41 @@
+.container {
+	float: left;
+	width: 100%;
+}
+
+.block {
+	max-width: none;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	@include border-box;
+	&:after {
+		// self-clear g-block
+		content: " ";
+		display: block;
+		clear: both;
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	.block {
+		max-width: 750px;
+	}
+
+}
+
+@media screen and (min-width: 748px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.block {
+		max-width: 1008px;
+	}
+
+}

@@ -1,0 +1,11 @@
+#search {
+	background-color: white;
+	border-top: 1px solid $color-border;
+	border-bottom: 1px solid $color-border;
+}
+
+@media screen and (max-width: 747px) {
+	#search {
+		display: none !important;
+	}
+}
