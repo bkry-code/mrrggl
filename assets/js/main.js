@@ -19,7 +19,7 @@ $(function() {
 
 	// Search Bar
 	$('.interact__search a').click(function(e) {
-		$('#search').slideToggle(300);
+		$('#navigation__search-bar').slideToggle(300);
 		$('.interact__search span').toggleClass('inactive');
 		return false;
 	});
