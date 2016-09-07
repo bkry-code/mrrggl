@@ -33,23 +33,24 @@
 					<li class="interact__toggle">
 						<a href="#" class="nav-toggle">Menu</a>
 					</li>
-					<li class="interact__search">
-						<a href="/search/" disabled="disabled"><span class="inactive">Close</span> Search</a>
-					</li>
+					<?php if($page->template() != 'search'): ?>
+						<li class="interact__search">
+							<a href="<?= $pages->find('search')->url() ?>"><span class="inactive">Close</span> Search</a>
+						</li>
+					<?php else: ?>
+						<li class="interact__search-disabled">
+							<span>Search</span>
+						</li>
+					<?php endif ?>
 				</ul>
 			</aside>
 		</div>
 	</div>
 	<ul class="navigation__mobile closed">
 		<li class="mobile-search">
-			<form action="" method="post">
-				<div>
-					<input autocomplete="off" name="searchterm" type="text" placeholder="Search">
-					<input type="hidden" name="language" value="en-US">
-				</div>
-				<div>
-					<input type="submit" value="Search">
-				</div>
+			<form action="<?= $pages->find('search')->url() ?>">
+				<input type="search" name="q" value="">
+				<input type="submit" value="Search">
 			</form>
 		</li>
 		<?php foreach($pages->visible() as $p): ?>

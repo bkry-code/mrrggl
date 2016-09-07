@@ -1,10 +1,6 @@
 <?php snippet('header') ?>
 
-
-
-
-
-<section class="container" id="projects">
+<section class="container">
 	<div class="block masonry__filter">
 		<?php $tags = $page->children()->pluck('category', ',', true); ?>
 		<ul>
@@ -15,9 +11,6 @@
 				</li>
 			<?php endforeach ?>
 		</ul>
-	</div>
-	<div class="block">
-		<?= $page->text()->kirbytext() ?>
 	</div>
 	<div class="block masonry__block">
 		<?php foreach($pages->find('projects')->children()->visible() as $project): ?>

@@ -18,12 +18,23 @@
 @import "partials/_search.scss";
 @import "partials/_masonry.scss";
 
+// font-size: 1rem;
+// line-height: 1.5rem
+
+// @748
+// font-size: 1.125rem;
+// line-height: 1.6875rem
+
+// @1024
+// font-size: 1.25rem;
+// line-height: 1.875rem
+
 
 
 body {
 	background-color: $color-background;
 	font-family: Malabar ET W08;
-	font-size: 20px;
+	font-size: 100%;
 }
 
 * {
@@ -52,8 +63,8 @@ a {
 .lead h1 {
 	font-size: 1.625rem;
 	line-height: 2rem;
-	font-family: Malabar W04;
-	font-weight: 900;
+	font-family: Maple;
+	font-weight: 700;
 	a {
 		border-bottom: 1px solid $color-text;
 	}

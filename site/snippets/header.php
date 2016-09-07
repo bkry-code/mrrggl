@@ -32,6 +32,8 @@
 
 <section class="head">
 	<?php snippet('head/nav') ?>
-	<?php snippet('head/search') ?>
+	<?php if($page->template() != 'search'): ?>
+		<?php snippet('head/search') ?>
+	<?php endif ?>
 	<?php snippet('head/lead') ?>
 </section>
