@@ -21,6 +21,9 @@
 				</header>
 				<figure>
 					<img class="lazy" width="400" height="500" data-src="<?= $project->url(); echo '/' . $project->thumbnail() ?>" alt="<?= $project->title() ?>" />
+					<noscript>
+						<img width="400" height="500" src="<?= $project->url(); echo '/' . $project->thumbnail() ?>" alt="<?= $project->title() ?>" />
+					</noscript>
 				</figure>
 			</a>
 		</article>

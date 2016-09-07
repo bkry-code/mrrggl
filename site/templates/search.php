@@ -14,17 +14,15 @@
 
 <section class="container" id="search-results">
 	<div class="block">
-
-<ul>
-	<?php foreach($results as $result): ?>
-	<li>
-		<a href="<?php echo $result->url() ?>">
-			<?php echo $result->title()->html() ?>
-		</a>
-	</li>
-	<?php endforeach ?>
-</ul>
-		
+		<ul>
+			<?php foreach($results as $result): ?>
+			<li>
+				<a href="<?php echo $result->url() ?>">
+					<?php echo $result->title()->html() ?>
+				</a>
+			</li>
+			<?php endforeach ?>
+		</ul>
 	</div>
 </section>
 
