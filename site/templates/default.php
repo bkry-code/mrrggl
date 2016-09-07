@@ -2,7 +2,7 @@
 
 <section class="main container">
 	<div class="block">
-		<?= $page->text() ?>
+		<?= $page->text()->kirbytext() ?>
 	</div>
 </section>
 

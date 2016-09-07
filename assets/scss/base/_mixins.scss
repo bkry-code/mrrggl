@@ -61,3 +61,10 @@
 	-ms-hyphens: $type;
 	hyphens: $type;
 }
+
+@mixin greyscale($percent) {
+	-webkit-filter: grayscale($percent);
+	-moz-filter: grayscale($percent);
+	-o-filter: grayscale($percent);
+	filter: grayscale($percent);
+}

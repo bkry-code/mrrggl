@@ -1,0 +1,150 @@
+/* ------------------- */
+/* Masonry Filter      */
+/* ------------------- */
+
+.masonry__filter {
+	padding: 0 .5rem;
+	li {
+		margin: .25rem .5rem 0 0;
+		list-style: none;
+		display: inline-block;
+		a {
+			font-family: Malabar ET W08;
+			display: inline-block;
+			padding: .25rem .25rem 0;
+			border-bottom: 1px solid $color-border;
+		}
+	}
+	.active-filter {
+		a {
+			background-color: $color-pro-green;
+			border-bottom: 0;
+			@include border-radius(3px);
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	.masonry__filter {
+		padding: 0 calc(8% - 0.25rem);
+	}
+
+}
+
+@media screen and (min-width: 748px) {
+
+	.masonry__filter {
+		li {
+			a {
+				font-size: 2rem;
+				line-height: 2.625rem;
+			}
+		}
+	}
+
+}
+
+/* ------------------- */
+/* Masonry Block       */
+/* ------------------- */
+
+.masonry__block {
+	padding: 1rem .75rem 0;
+}
+
+@media screen and (min-width: 480px) {
+
+	.masonry__block {
+		padding: 1rem calc(8% - .75rem) 0;
+	}
+
+}
+
+@media screen and (min-width: 748px) {
+
+	.masonry__block {
+		padding: 2.5rem 0 0;
+	}
+
+}
+
+.masonry__item {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	margin-bottom: .75rem;
+	background: black;
+	@include border-box;
+	&:hover {
+		border-color: $color-text;
+	}
+	a {
+		display: block;
+	}
+	header {
+		z-index: 1000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 30% 1.5rem 0;
+		text-align: center;
+		h1 {
+			font-family: Malabar ET W08;
+			line-height: 1.25rem;
+			font-weight: 700;
+			color: white;
+		}
+	}
+	figure {
+		-webkit-backface-visibility: hidden;
+    	-webkit-transform: translateZ(0) scale(1.0, 1.0);
+		position: relative;
+		opacity: 0.5;
+		img {
+			-webkit-backface-visibility: hidden;
+    		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			margin: 0 0 3em;
+			@include greyscale(100%);
+		}
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 125%;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	.masonry__item {
+		margin: .75rem;
+		width: calc(50% - 1.5rem);
+	}
+
+}
+
+@media screen and (min-width: 748px) {
+
+	.masonry__item {
+		width: calc(33.3333% - 1.5rem);
+		header {
+			h1 {
+				font-size: 1.25rem;
+				line-height: 1.625rem;
+			}
+		}
+	}
+
+}

@@ -16,6 +16,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<?= js('assets/js/lib/fontfaceobserver.min.js') ?>
+	<?= js('assets/js/lib/jquery.lazyload.js') ?>
 	<?= js('assets/js/main.js') ?>
 
 	<?php snippet('scss') ?>

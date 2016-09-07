@@ -16,16 +16,19 @@
 
 @import "partials/_nav.scss";
 @import "partials/_search.scss";
+@import "partials/_masonry.scss";
 
 
 
 body {
 	background-color: $color-background;
+	font-family: Malabar ET W08;
+	font-size: 20px;
 }
 
 * {
     font-size: 100%;
-    color: #1e1e1e;
+    color: $color-text;
 }
 
 a {
@@ -49,10 +52,10 @@ a {
 .lead h1 {
 	font-size: 1.625rem;
 	line-height: 2rem;
-	font-family: Malabar;
+	font-family: Malabar W04;
 	font-weight: 900;
 	a {
-		border-bottom: 1px solid #1e1e1e;
+		border-bottom: 1px solid $color-text;
 	}
 }
 
