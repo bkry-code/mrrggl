@@ -4,86 +4,13 @@
 /* Base                */
 /* ------------------- */
 
-@import "base/_mixins.scss";
-@import "base/_colors.scss";
-@import "base/_sanitize.scss";
-@import "base/_fonts.scss";
-@import "base/_grid.scss";
+@import "base/_base.scss";
 
 /* ------------------- */
 /* Partials            */
 /* ------------------- */
 
-@import "partials/_nav.scss";
-@import "partials/_search.scss";
+@import "partials/_navigation.scss";
+@import "partials/_headline.scss";
+@import "partials/_search-bar.scss";
 @import "partials/_masonry.scss";
-
-// font-size: 1rem;
-// line-height: 1.5rem
-
-// @748
-// font-size: 1.125rem;
-// line-height: 1.6875rem
-
-// @1024
-// font-size: 1.25rem;
-// line-height: 1.875rem
-
-
-
-body {
-	background-color: $color-background;
-	font-family: Malabar ET W08;
-	font-size: 100%;
-}
-
-* {
-    font-size: 100%;
-    color: $color-text;
-}
-
-a {
-	text-decoration: none;
-}
-
-
-.lead {
-	@include border-box;
-	padding: 0 .75rem;
-}
-
-@media screen and (min-width: 480px) {
-
-	.lead {
-		padding: 0 8%;
-	}
-
-}
-
-.lead h1 {
-	font-size: 1.625rem;
-	line-height: 2rem;
-	font-family: Maple;
-	font-weight: 700;
-	a {
-		border-bottom: 1px solid $color-text;
-	}
-}
-
-@media screen and (min-width: 748px) {
-
-	.lead h1 {
-		font-size: 2rem;
-		line-height: 2.625rem;
-	}
-
-}
-
-@media screen and (min-width: 1024px) {
-
-	.lead h1 {
-		font-size: 2.625rem;
-		line-height: 3.375rem;
-	}
-
-}

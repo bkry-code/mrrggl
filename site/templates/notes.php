@@ -6,4 +6,6 @@
 	</div>
 </section>
 
+<section class="related"></section>
+
 <?php snippet('footer') ?>

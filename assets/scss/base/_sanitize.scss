@@ -538,3 +538,12 @@ textarea,
 [hidden][aria-hidden="false"]:focus {
 	clip: auto;
 }
+
+/* My Additions */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}

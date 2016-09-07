@@ -68,3 +68,21 @@
 	-o-filter: grayscale($percent);
 	filter: grayscale($percent);
 }
+
+@mixin placeholder-color($color) {
+	::-webkit-input-placeholder {
+		color: $color;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: $color;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: $color;  
+	}
+
+	:-ms-input-placeholder {  
+		color: $color;  
+	}
+}

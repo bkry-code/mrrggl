@@ -49,22 +49,31 @@
 /* Masonry Block       */
 /* ------------------- */
 
-.masonry__block {
+.masonry__sheet {
 	padding: 1rem .75rem 0;
 }
 
 @media screen and (min-width: 480px) {
 
-	.masonry__block {
+	.masonry__sheet {
 		padding: 1rem calc(8% - .75rem) 0;
+		max-width: calc(750px + 1.5rem);
 	}
 
 }
 
 @media screen and (min-width: 748px) {
 
-	.masonry__block {
+	.masonry__sheet {
 		padding: 2.5rem 0 0;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.masonry__sheet {
+		max-width: calc(1008px + 1.5rem);
 	}
 
 }

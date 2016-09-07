@@ -1,0 +1,146 @@
+/* ------------------- */
+/* Mobile Nav          */
+/* ------------------- */
+
+@media screen and (min-width: 748px) {
+
+	.mobile-nav {
+		display: none;
+	}
+
+}
+
+/* ------------------- */
+/* Main Nav            */
+/* ------------------- */
+
+.main-nav {
+	padding: 1.125rem .75rem;
+	font-family: Maple;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	.row {
+		position: relative;
+	}
+}
+
+.main-nav__list {
+	.active {
+		font-weight: 700;
+	}
+}
+
+.main-nav__logo {
+	display: inline-block;
+	float: left;
+}
+
+.main-nav__primary,
+.main-nav__breadcrumb {
+	display: none;
+}
+
+@media screen and (min-width: 480px) {
+
+	.main-nav {
+		padding: 1.5rem 8%;
+	}
+
+	.main-nav__breadcrumb {
+		display: inline-block;
+		float: left;
+		li {
+			margin-left: 1.125rem;
+			position: relative;
+			float: left;
+			&:before {
+				content: "›";
+				position: absolute;
+				left: -.75rem;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 659px) {
+
+	.main-nav__breadcrumb {
+		li {
+			&:last-child {
+				a {
+					display: none;
+				}
+				&:after {
+					content: '...';
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 660px) {
+
+	.main-nav__breadcrumb li:last-child a {
+		display: inline-block;
+		width: 250px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+}
+
+@media screen and (min-width: 748px) {
+
+	.main-nav {
+		padding: 1.875rem 8%;
+	}
+
+	.main-nav__primary {
+		display: inline-block;
+		float: left;
+		li {
+			margin-left: 1.125rem;
+			float: left;
+		}
+	}
+
+	.main-nav__list--breadcrumb-enabled {
+		.hidden {
+			display: none;
+		}
+	}
+
+}
+
+/* ------------------- */
+/* Toggle              */
+/* ------------------- */
+
+.main-nav__toggle {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.main-nav__toggle__search-bar {
+	display: none;
+}
+
+.main-nav__toggle__mobile-nav {
+	list-style: none;
+}
+
+@media screen and (min-width: 748px) {
+
+	.main-nav__toggle__search-bar {
+		display: inline-block;
+	}
+
+	.main-nav__toggle__mobile-nav {
+		display: none;
+	}
+
+}

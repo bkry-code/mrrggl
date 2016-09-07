@@ -2,7 +2,7 @@
 
 <section class="container">
 	<div class="block masonry__filter">
-		<?php $tags = $page->children()->pluck('category', ',', true); ?>
+		<?php $tags = $pages->find('projects')->children()->pluck('category', ',', true); ?>
 		<ul>
 			<li id="filter-reset" class="filter-class active-filter"><a id="all" href="#">All</a></li>
 			<?php foreach($tags as $tag): ?>
@@ -12,7 +12,7 @@
 			<?php endforeach ?>
 		</ul>
 	</div>
-	<div class="block masonry__block">
+	<div class="block masonry__sheet">
 		<?php foreach($pages->find('projects')->children()->visible() as $project): ?>
 		<article class="masonry__item <?= preg_replace('/ /', '-', $project->category()); ?>">
 			<a href="<?= $project->url() ?>">

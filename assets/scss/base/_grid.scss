@@ -7,10 +7,8 @@
 	max-width: none;
 	width: 100%;
 	margin: 0 auto;
-	display: block;
 	@include border-box;
 	&:after {
-		// self-clear g-block
 		content: " ";
 		display: block;
 		clear: both;
@@ -25,10 +23,6 @@
 	.block {
 		max-width: 750px;
 	}
-
-}
-
-@media screen and (min-width: 748px) {
 
 }
 

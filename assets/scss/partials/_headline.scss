@@ -1,0 +1,40 @@
+.headline {
+	@include border-box;
+	padding: 0 .75rem;
+}
+
+@media screen and (min-width: 480px) {
+
+	.headline {
+		padding: 0 8%;
+	}
+
+}
+
+h1 {
+	font-size: 1.625rem;
+	line-height: 2rem;
+	font-family: Maple;
+	font-weight: 700;
+	a {
+		border-bottom: 1px solid $color-text;
+	}
+}
+
+@media screen and (min-width: 748px) {
+
+	h1 {
+		font-size: 2rem;
+		line-height: 2.625rem;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	h1 {
+		font-size: 2.625rem;
+		line-height: 3.375rem;
+	}
+
+}

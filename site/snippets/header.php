@@ -30,10 +30,6 @@
 </head>
 <body>
 
-<section class="head">
-	<?php snippet('head/nav') ?>
-	<?php if($page->template() != 'search'): ?>
-		<?php snippet('head/search') ?>
-	<?php endif ?>
-	<?php snippet('head/lead') ?>
-</section>
+<?php snippet('navigation') ?>
+<?php snippet('search-bar') ?>
+<?php snippet('headline') ?>
