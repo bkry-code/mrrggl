@@ -1,11 +1,11 @@
 <?php snippet('header') ?>
 
-<section class="container default__page">
-	<div class="block">
-		<header class="default__header">
+<section class="container default-page">
+	<div class="block default-page__block">
+		<header class="default-page__header">
 			<h1><?= $page->title() ?></h1>
 		</header>
-		<article class="default__article">
+		<article class="default-page__article">
 			<?= $page->text()->kirbytext() ?>
 		</article>
 	</div>

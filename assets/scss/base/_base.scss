@@ -4,20 +4,14 @@
 @import "_fonts.scss";
 @import "_grid.scss";
 
-// font-size: 1rem;
-// line-height: 1.5rem
-
-// @748
-// font-size: 1.125rem;
-// line-height: 1.6875rem
-
-// @1024
-// font-size: 1.25rem;
-// line-height: 1.875rem
+/* ------------------- */
+/* Base Styles         */
+/* ------------------- */
 
 body {
 	background-color: $color-background;
-	font-family: Malabar ET W08;
+	font-family: $font-text;
+	border-top: 8px solid $color-pro-green;
 }
 
 * {
@@ -35,4 +29,8 @@ a {
 
 h1 {
 	font-family: Maple;
+}
+
+img {
+	width: 100%;
 }

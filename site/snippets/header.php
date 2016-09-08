@@ -32,4 +32,3 @@
 
 <?php snippet('navigation') ?>
 <?php snippet('search-bar') ?>
-<?php snippet('headline') ?>

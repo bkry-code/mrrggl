@@ -4,10 +4,10 @@
 }
 
 .block {
-	max-width: none;
-	width: 100%;
-	margin: 0 auto;
-	@include border-box;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    @include border-box;
 	&:after {
 		content: " ";
 		display: block;

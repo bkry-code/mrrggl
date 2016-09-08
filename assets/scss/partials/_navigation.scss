@@ -2,6 +2,54 @@
 /* Mobile Nav          */
 /* ------------------- */
 
+.mobile-nav {
+	border-bottom: 1px solid $color-border;
+	margin-bottom: 1.5rem;
+	li {
+		font-family: $font-mobile-nav;
+		font-size: 1.625rem;
+		line-height: 2rem;
+		font-weight: $font-mobile-nav-weight;
+		border-top: 1px solid $color-border;
+		a {
+			padding: .75rem;
+			display: block;
+		}
+	}
+	&.closed {
+		display: none;
+	}
+}
+
+.mobile-nav__search {
+	padding: .75rem;
+	background-color: white;
+	input[type="search"] {
+		width: 100%;
+		font-family: $font-mobile-nav;
+		font-weight: $font-mobile-nav-weight;
+	}
+	input[type="submit"] {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	.mobile-nav {
+		li {
+			a {
+				padding: .75rem 8%;
+			}
+		}
+	}
+
+	.mobile-nav__search {
+		padding: .75rem 8%;
+	}
+
+}
+
 @media screen and (min-width: 748px) {
 
 	.mobile-nav {
@@ -16,17 +64,21 @@
 
 .main-nav {
 	padding: 1.125rem .75rem;
-	font-family: Maple;
+	font-family: $font-main-nav;
 	font-size: 1.125rem;
 	line-height: 1.5rem;
 	.row {
 		position: relative;
+		width: 100%;
+		float: left;
+		@include border-box;
 	}
 }
 
 .main-nav__list {
+	text-align: left;
 	.active {
-		font-weight: 700;
+		text-decoration: underline;
 	}
 }
 
@@ -43,7 +95,10 @@
 @media screen and (min-width: 480px) {
 
 	.main-nav {
-		padding: 1.5rem 8%;
+		padding: 1.5rem 0;
+		.row {
+			padding: 0 8%;
+		}
 	}
 
 	.main-nav__breadcrumb {
@@ -95,7 +150,7 @@
 @media screen and (min-width: 748px) {
 
 	.main-nav {
-		padding: 1.875rem 8%;
+		padding: 1.875rem 0;
 	}
 
 	.main-nav__primary {
@@ -123,6 +178,10 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+	strong {
+		font-weight: 400;
+		text-decoration: underline;
+	}
 }
 
 .main-nav__toggle__search-bar {
@@ -131,6 +190,14 @@
 
 .main-nav__toggle__mobile-nav {
 	list-style: none;
+}
+
+@media screen and (min-width: 480px) {
+
+	.main-nav__toggle {
+		right: 8%;
+	}
+
 }
 
 @media screen and (min-width: 748px) {

@@ -1,2 +1,57 @@
 @import "../fonts/malabar/_malabar.scss";
 @import "../fonts/maple/_maple.scss";
+
+/* ------------------- */
+/* Font Sizing         */
+/* ------------------- */
+/* fs:   1     rem     */
+/* lh:   1.5   rem     */
+/* ------------------- */
+/* @748                */
+/* fs:   1.125 rem     */
+/* lh:   1.625 rem     */
+/* ------------------- */
+/* @1024               */
+/* fs:   1.25  rem     */
+/* lh:   1.875 rem     */
+/* ------------------- */
+
+$font-text: Malabar ET W08;
+
+/* ------------------- */
+/* Main Nav            */
+/* ------------------- */
+
+$font-main-nav: Maple;
+
+/* ------------------- */
+/* Mobile Nav          */
+/* ------------------- */
+
+$font-mobile-nav: Maple;
+$font-mobile-nav-weight: 700;
+
+/* ------------------- */
+/* Search Bar          */
+/* ------------------- */
+
+$font-search-bar-header: Maple;
+$font-search-bar-header-weight: 700;
+
+$font-search-bar-input: Malabar ET W08;
+
+$font-search-bar-error: Maple;
+
+/* ------------------- */
+/* Headline            */
+/* ------------------- */
+
+$font-headline: Maple;
+$font-headline-weight: 700;
+
+/* ------------------- */
+/* Masonry             */
+/* ------------------- */
+
+$font-masonry-item: Malabar ET W08;
+$font-masonry-item-weight: 700;

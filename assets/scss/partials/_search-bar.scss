@@ -3,20 +3,23 @@
 	border-top: 1px solid $color-border;
 	border-bottom: 1px solid $color-border;
 	margin-bottom: 2.25rem;
+	.row {
+		padding: 0 .75rem;
+	}
 	.block {
-		padding: 2.25rem 8%;
+		padding: 2.25rem 0;
 	}
 	p {
 		font-size: 1.625rem;
 		line-height: 2rem;
-		font-family: Maple;
-		font-weight: 700;
+		font-family: $font-search-bar-header;
+		font-weight: $font-search-bar-header-weight;
 	}
 	input[type="search"] {
 		font-size: 1.625rem;
 		line-height: 2rem;
 		margin-top: .25rem;
-		font-family: Malabar ET W08;
+		font-family: $font-search-bar-input;
 		width: 100%;
 		float: left;
 		border-bottom: 1px solid $color-border;
@@ -25,13 +28,21 @@
 	.search-error {
 		display: block;
 		clear: left;
-		font-family: Maple;
+		font-family: $font-search-bar-error;
 		background-color: $color-background;
 		padding: .75rem 1rem;
 		border-bottom: 1px solid $color-border;
 		border-left: 1px solid $color-border;
 		border-right: 1px solid $color-border;
 	}
+}
+
+@media screen and (min-width: 480px) {
+
+	.search-bar .row {
+		padding: 0 8%;
+	}
+
 }
 
 @media screen and (max-width: 747px) {
@@ -64,6 +75,3 @@
 	}
 
 }
-
-
-

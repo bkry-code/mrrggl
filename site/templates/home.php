@@ -1,4 +1,5 @@
 <?php snippet('header') ?>
+<?php snippet('headline') ?>
 
 <section class="container">
 	<div class="block">

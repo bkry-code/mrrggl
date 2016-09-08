@@ -24,10 +24,10 @@
 			<aside class="main-nav__toggle">
 				<ul>
 					<li class="main-nav__toggle__mobile-nav"><a href="#">Menu</a></li>
-					<?php if($page->template() != 'search'): ?>
-						<li class="main-nav__toggle__search-bar"><a href="<?= $pages->find('search')->url() ?>"><span class="closed">Close </span>Search</a></li>
-					<?php else: ?>
+					<?php if($page->template() == 'search' || $page->template() == 'error'): ?>
 						<li class="main-nav__toggle__search-bar"><strong>Search</strong></li>
+					<?php else: ?>
+						<li class="main-nav__toggle__search-bar"><a href="<?= $pages->find('search')->url() ?>"><span class="closed">Close </span>Search</a></li>
 					<?php endif ?>
 				</ul>
 			</aside>
@@ -38,9 +38,9 @@
 	<div class="block mobile-nav closed">
 		<nav class="mobile-nav__list">
 			<ul>
-				<li>
+				<li class="mobile-nav__search">
 					<form action="<?= $pages->find('search')->url() ?>">
-						<input type="search" name="q" value="" autocomplete="off">
+						<input type="search" name="q" value="" autocomplete="off" placeholder="Search">
 						<input type="submit" value="Search">
 					</form>
 				</li>

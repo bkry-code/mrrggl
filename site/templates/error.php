@@ -1,8 +1,9 @@
-<?php if($page->template() != 'search' && $page->template() != 'error'): ?>
-<section class="container search-bar search-bar__drop-down" style="display: none;">
+<?php snippet('header') ?>
+
+<section class="container search-bar" id="page__search-bar">
 	<div class="block">
 		<div class="row">
-			<h1>Search:</h1>
+			<h1>404. The page doesn’t exist.</h1>
 			<form action="<?= $pages->find('search')->url() ?>">
 				<input type="search" name="q" placeholder="<?= $pages->find('search')->examplesearch()->html() ?>" value="" autocomplete="off">
 				<input type="submit" value="Search">
@@ -10,4 +11,5 @@
 		</div>
 	</div>
 </section>
-<?php endif ?>
+
+<?php snippet('footer') ?>

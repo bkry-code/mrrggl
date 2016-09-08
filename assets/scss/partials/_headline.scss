@@ -6,7 +6,10 @@
 @media screen and (min-width: 480px) {
 
 	.headline {
-		padding: 0 8%;
+		padding: 0;
+		.row {
+			padding: 0 8%;
+		}
 	}
 
 }
@@ -14,8 +17,8 @@
 h1 {
 	font-size: 1.625rem;
 	line-height: 2rem;
-	font-family: Maple;
-	font-weight: 700;
+	font-family: $font-headline;
+	font-weight: $font-headline-weight;
 	a {
 		border-bottom: 1px solid $color-text;
 	}
